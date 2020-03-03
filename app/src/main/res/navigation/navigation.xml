@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation"
+            app:startDestination="@id/home5">
+
+    <fragment
+            android:id="@+id/home5"
+            android:name="org.d3if4009.bmi.home5"
+            android:label="home">
+        <action android:id="@+id/action_home5_to_about" app:destination="@id/about"/>
+        <action android:id="@+id/action_home5_to_hasil" app:destination="@id/hasil"/>
+    </fragment>
+    <fragment android:id="@+id/about" android:name="org.d3if4009.bmi.about" android:label="about"/>
+    <fragment android:id="@+id/hasil" android:name="org.d3if4009.bmi.hasil" android:label="hasil">
+        <action android:id="@+id/action_hasil_to_mengatasiKekurusan" app:destination="@id/mengatasiKekurusan"/>
+        <action android:id="@+id/action_hasil_to_menjagaTetapIdeal" app:destination="@id/menjagaTetapIdeal"/>
+        <action android:id="@+id/action_hasil_to_mengatasiKegemukan" app:destination="@id/mengatasiKegemukan"/>
+    </fragment>
+    <fragment android:id="@+id/mengatasiKekurusan" android:name="org.d3if4009.bmi.mengatasiKekurusan"
+              android:label="mengatasiKekurusan"/>
+    <fragment android:id="@+id/menjagaTetapIdeal" android:name="org.d3if4009.bmi.menjagaTetapIdeal"
+              android:label="menjagaTetapIdeal"/>
+    <fragment android:id="@+id/mengatasiKegemukan" android:name="org.d3if4009.bmi.mengatasiKegemukan"
+              android:label="mengatasiKegemukan"/>
+</navigation>
